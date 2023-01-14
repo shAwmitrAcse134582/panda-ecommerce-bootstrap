@@ -12,7 +12,7 @@
 <body>
     <header class="container">
         <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#"> <img src="./images/logo.png" alt="Bootstrap"></a>
 
@@ -27,10 +27,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">shoes</a>
+                            <a class="nav-link" href="#shoes">shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">BAckpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">subscribe</a>
@@ -153,7 +153,7 @@
         <!-- catagories end -->
 
         <!-- shoes section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h2>shoes</h2>
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -207,7 +207,7 @@
 
         <!-- shoes section end -->
         <!-- backpack section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="backpack">
             <h2>backpack</h2>
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -260,8 +260,33 @@
         </section>
         <!-- backpack section end -->
 
+        <!-- subscription section -->
+        <section style="height:350px;"
+            class="container rounded-3 d-flex justify-content-center align-items-center bg-info ">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales, specials and more</p>
+
+                <form>
+                    <div class="mb-3">
+
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- subscription section end -->
+
 
     </main>
+
+    <footer class="mt-5 text-center">
+        <p>©2023. Panda Commerce. All rights reserved. Shawmitra, Bangladesh.</p>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
